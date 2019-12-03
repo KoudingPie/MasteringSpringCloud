@@ -1,0 +1,18 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false #
+    fetch-registry: false #
+  server:
+    enable-self-preservation: false #
+    eviction-interval-timer-in-ms: 3000
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
+#开启服务端安全验证
+spring:
+  security:
+    user:
+      name: user
+      password: 123

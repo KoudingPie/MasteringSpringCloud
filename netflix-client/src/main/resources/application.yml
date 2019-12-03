@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: netflix-client
+
+server:
+  port: 8081
+
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://user:123@localhost:8761/eureka/
+
+  instance:
+    instance-id: ${spring.application.name}
+
+
+#Spring boot 2.X开启优雅停机，关机取消注册，POST http://localhost:8081/actuator/shutdown response: {"message":"Shutting down, bye..."}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
