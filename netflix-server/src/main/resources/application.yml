@@ -11,8 +11,8 @@ eureka:
     lease-renewal-interval-in-seconds: 1
     lease-expiration-duration-in-seconds: 2
 #开启服务端安全验证
-spring:
-  security:
-    user:
-      name: user
-      password: 123
+#spring:
+#  security:
+#    user:
+#      name: user
+#      password: 123

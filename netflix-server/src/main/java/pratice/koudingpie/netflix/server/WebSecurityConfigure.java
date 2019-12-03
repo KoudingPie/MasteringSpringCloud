@@ -9,17 +9,17 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
  * @author 何祥敏
  * @since 2019-12-01
  */
-@EnableWebSecurity
-//@Configuration
-public class WebSecurityConfigure extends WebSecurityConfigurerAdapter {
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-
-        http.csrf().disable();
-        http.httpBasic(); //开启认证
-
-
-        System.out.println("csrf disabled-------------");
-        super.configure(http);
-    }
-}
+//@EnableWebSecurity
+////@Configuration
+//public class WebSecurityConfigure extends WebSecurityConfigurerAdapter {
+//    @Override
+//    protected void configure(HttpSecurity http) throws Exception {
+//
+//        http.csrf().disable();
+//        http.httpBasic(); //开启认证
+//
+//
+//        System.out.println("csrf disabled-------------");
+//        super.configure(http);
+//    }
+//}
